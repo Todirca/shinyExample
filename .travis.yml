@@ -18,5 +18,5 @@ r_packages:
   - shiny
   - tidyverse
   
-  script:
+script:
   - R -f deploy.R
