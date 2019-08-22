@@ -5,9 +5,9 @@ library(rsconnect)
 source("./R/util.R")
 
 # Set the account info for deployment.
-rsconnect::setAccountInfo(name='lab4fin', 
-                          token='525F487672FBCE168FD74F096796FFC6', 
-                          secret='AcivSXb58cugvZ8ZIvMhFek0ezZXkJWqBujGbbcM'))
+setAccountInfo(name   = Sys.getenv("shinyapps_name"),
+               token  = Sys.getenv("shinyapps_token"),
+               secret = Sys.getenv("shinyapps_secret"))
 
 # Deploy the application.
 deployApp()
