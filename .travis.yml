@@ -20,3 +20,7 @@ r_packages:
   
 script:
   - R -f deploy.R
+
+notifications:
+  email:
+   - jeremy@lab4fin.tech
