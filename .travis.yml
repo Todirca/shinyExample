@@ -24,3 +24,9 @@ script:
 notifications:
   email:
    - jeremy@lab4fin.tech
+   
+  email:
+    recipients:
+     - jeremy@lab4fin.tech
+    on_success: <always|never|change>  # default: change
+    on_failure: <always|never|change>  # default: always
