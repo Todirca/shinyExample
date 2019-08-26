@@ -22,7 +22,9 @@ shinyUI(fluidPage(
                         "Number of bins:",
                         min = 1,
                         max = 50,
-                        value = 30)
+                        value = 30),
+            hr(),
+            downloadButton("dlPDF", "Télécharger PDF de test")
         ),
 
         # Show a plot of the generated distribution
